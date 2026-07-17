@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/devforge
+    url: jdbc:postgresql://localhost:5433/devforge?options=-c%20TimeZone=Asia/Kolkata
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
@@ -15,9 +15,8 @@ spring:
       hibernate:
         format_sql: true
 
-  jackson:
-    serialization:
-      indent-output: true
-
 server:
   port: 8080
+  spring:
+    jpa:
+      open-in-view: false
