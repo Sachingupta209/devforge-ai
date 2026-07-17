@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: devforge-ai
+
+  profiles:
+    active: dev
